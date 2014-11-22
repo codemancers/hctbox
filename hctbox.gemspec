@@ -7,8 +7,8 @@ require "hctbox/version"
 Gem::Specification.new do |s|
   s.name        = "hctbox"
   s.version     = Hctbox::VERSION
-  s.authors     = ["TODO: Your name"]
-  s.email       = ["TODO: Your email"]
+  s.authors     = ["Yuva Kumar"]
+  s.email       = ["yuva@codemancers.com"]
   s.homepage    = "TODO"
   s.summary     = "TODO: Summary of Hctbox."
   s.description = "TODO: Description of Hctbox."
