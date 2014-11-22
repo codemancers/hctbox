@@ -9,9 +9,9 @@ Gem::Specification.new do |s|
   s.version     = Hctbox::VERSION
   s.authors     = ["Yuva Kumar"]
   s.email       = ["yuva@codemancers.com"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of Hctbox."
-  s.description = "TODO: Description of Hctbox."
+  s.homepage    = "https://github.com/code-mancers/hctbox"
+  s.summary     = "Hctbox for your rescue!"
+  s.description = "Bunch of html/css utilities."
   s.license     = "MIT"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
