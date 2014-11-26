@@ -1,0 +1,5 @@
+ul.nav.nav-list
+  li[class=(params[:id] == '1' ? 'active' : '')]
+    = link_to 'Buttons', hctbox.styleguide_path('1')
+  li[class=(params[:id] == '2' ? 'active' : '')]
+    = link_to 'Forms', hctbox.styleguide_path('2')

@@ -1,0 +1,68 @@
+// Place all the styles related for all global definitions here
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.styleguide-example {
+  border: 1px solid #eee;
+  border-radius: 3px;
+  margin-bottom: 20px;
+
+  h3 {
+    background-color: #333;
+    border-radius: 3px 3px 0 0;
+    color: #fff;
+    font-size: 14px;
+    margin: -1px -1px 0;
+    padding: 0 15px;
+  }
+
+  .styleguide-description {
+    background-color: #fafafa;
+    border-bottom: 1px solid #eee;
+    padding: 15px;
+  }
+
+  .styleguide-element {
+    padding: 15px;
+    position: relative;
+
+    &:after {
+      clear: both;
+      content: "";
+      display: block;
+      margin: 0;
+      padding: 0;
+    }
+
+    .styleguide-modifier-name {
+      position: absolute;
+      top: 0;
+      right: -1px;
+      display: block;
+      padding: 5px 15px;
+      font-size: 11px;
+      color: #999;
+      background-color: #f9f9f9;
+      border: 1px solid #eee;
+      border-top: 0;
+    }
+  }
+
+  .styleguide-element + .styleguide-element {
+    border-top: 1px solid #eee;
+  }
+
+  .styleguide-html {
+    background-color: #f7f7f9;
+    border-top: 1px solid #eee;
+    overflow: auto;
+    padding: 15px;
+
+    pre {
+      margin: 0;
+      border: none;
+      padding: 0px;
+      background: none;
+    }
+  }
+}

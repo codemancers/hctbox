@@ -1,0 +1,33 @@
+// Button style
+// ------------------------------
+
+//
+// A btn is used to style buttons and hyperlinks, ie anchor tags. This file
+// customizes defaults provided by bootstrap
+//
+// .btn-primary   - Indicates primary action in a set of buttons.
+// .btn-info      - Used as an alternative to the default styles for providing info.
+// .btn-success   - Indicates a successful or positive action.
+// .btn-warning   - Indicates caution should be taken with this action.
+// .btn-danger    - Indicates a dangerous or potentially negative action.
+// .btn-inverse   - Alternate button, not tied to a semantic action or use.
+// .btn-link      - Deemphasize a button by making it look like a link while maintaining button behavior.
+// .disabled      - Button which should be disabled.
+//
+// Styleguide Buttons
+.btn {}
+
+
+
+// Button size
+// ------------------------------
+
+//
+// Fancy larger or smaller buttons? Add .btn-large, .btn-small, or .btn-mini for additional sizes.
+//
+// .btn-large  - Large buttons
+// .btn-small  - Small buttons
+// .btn-mini   - Mini buttons
+//
+// Styleguide Button Size
+.btn-large {}
