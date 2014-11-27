@@ -8,6 +8,8 @@ module Hctbox
         render template: 'hctbox/styleguides/css/buttons'
       when '2'
         render template: 'hctbox/styleguides/css/forms'
+      when '3'
+        render template: 'hctbox/styleguides/css/alerts'
       end
     end
   end

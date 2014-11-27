@@ -1,0 +1,16 @@
+<div class="container">
+  <h3> Styleguide - Alerts </h3>
+  <hr/>
+  <div class="row-fluid">
+    <div class="span3">
+      <%= render partial: 'hctbox/styleguides/css/sidebar' %>
+    </div>
+    <div class="span9">
+      <%- kss_block 'Alerts' do %>
+        <div class="alert $modifier_class">
+          Alert box
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
