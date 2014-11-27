@@ -22,7 +22,10 @@ module Hctbox
       require 'nokogiri'
 
       # Wrap code so that example html has only one root div
-      wrapped_code = "<div>#{html}</div>"
+      wrapped_code = "<div class='asdf'>#{html}</div>"
+        .gsub(/ {2,}/, '')
+        .gsub(/\n/, '')
+
       xml = Nokogiri::XML(wrapped_code)
       children = xml.root.children
       children.map(&:to_s).join("\n")

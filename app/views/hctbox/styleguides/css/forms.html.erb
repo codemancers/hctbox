@@ -1,0 +1,19 @@
+<div class="container">
+  <h3> Styleguide - Forms </h3>
+  <hr/>
+  <div class="row-fluid">
+    <div class="span3">
+      <%= render partial: 'hctbox/styleguides/css/sidebar' %>
+    </div>
+    <div class="span9">
+      <%- kss_block 'Forms' do %>
+        <form class="$modifier_class">
+          <input/>
+          <button class="btn btn-primary btn-small">
+            submit
+          </button>
+        </form>
+      <% end %>
+    </div>
+  </div>
+</div>
