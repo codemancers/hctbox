@@ -10,6 +10,8 @@ module Hctbox
         render template: 'hctbox/styleguides/css/forms'
       when '3'
         render template: 'hctbox/styleguides/css/alerts'
+      when '4'
+        render template: 'hctbox/styleguides/css/tables'
       end
     end
   end

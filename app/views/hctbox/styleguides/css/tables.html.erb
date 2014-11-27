@@ -1,0 +1,34 @@
+<div class="container">
+  <h3> Styleguide - Tables </h3>
+  <hr/>
+  <div class="row-fluid">
+    <div class="span3">
+      <%= render partial: 'hctbox/styleguides/css/sidebar' %>
+    </div>
+    <div class="span9">
+      <%- kss_block 'Tables' do %>
+      <table class="table $modifier_class">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Handle</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Yuva</td>
+            <td>@iffyuva</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Codemancers</td>
+            <td>@codemancershq</td>
+          </tr>
+        </tbody>
+      </table>
+      <% end %>
+    </div>
+  </div>
+</div>
