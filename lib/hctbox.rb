@@ -1,5 +1,7 @@
 require 'hctbox/engine'
 require 'kss'
+require 'nokogiri'
+require 'coderay'
 
 
 module Hctbox
