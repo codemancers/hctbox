@@ -9,8 +9,9 @@ class Hctbox.DisplayErrors
     for entry in @json
       tds = ['<td>' + tableIndex + '</td>']
       for key, val of entry
-        td = '<td>' + val + '</td>'
-        tds.push td
+        if key == 'type' || key == 'message'
+          td = '<td>' + val + '</td>'
+          tds.push td
 
       row = '<tr>' + tds.join('') + '</tr>'
       tableRows.push row
@@ -18,14 +19,13 @@ class Hctbox.DisplayErrors
       ++tableIndex
 
     table =
-      '<table class="table table-striped">' +
+      '<table class="table table-striped table-bordered">' +
       '  <tbody>' +
       '    ' + tableRows.join('') +
       '  </tbody>' +
       '</table>'
 
     modalHtml = @createModal(table)
-    console.info modalHtml
     $('#js-modal .modal').modal('hide')
     $('#js-modal').html(modalHtml)
     $('#js-modal .modal').modal()
