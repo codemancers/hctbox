@@ -9,25 +9,33 @@ class Hctbox.HtmlValidator
     $(document).on 'click', @selector, @onClick
 
   onClick: =>
-    data = new FormData()
+    data = document.documentElement.outerHTML
+    console.info data
 
-      fragment: document.documentElement.outerHTML
-      prefill: '0'
-      doctype: 'HTML5'
-      prefill_doctype: 'html401'
-      group:   '0'
-      ss:      '1'
-      st:      '1'
-      outline: '1'
-      No200:   '1'
-      verbose: '1'
+    $.ajax
+      url: 'https://validator.nu/?out=json&showsource=yes'
+      data: data
+      type: 'POST'
+      contentType: 'text/html'
+      success: @onValidatingMarkup
+      error: @onError
+      beforeSend: @beforeSend
 
-    $.post 'http://validator.w3.org/check', data, @onValidatingMarkup, 'multipart/form-data;'
     false
 
   onValidatingMarkup: (data)=>
+    alert(10)
     console.info data
     $('body').append(data)
+
+  onError: (xhr, status, error)->
+    console.info xhr
+    console.info status
+    console.info error
+
+  beforeSend: (xhr, settings)->
+    console.info(xhr)
+    true
 
 
 # create an instance of html validator
