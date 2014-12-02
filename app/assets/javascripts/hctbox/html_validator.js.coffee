@@ -31,11 +31,11 @@ class Hctbox.HtmlValidator
   # http://stackoverflow.com/questions/6088972/get-doctype-of-an-html-as-string-with-javascript
   getDoctype: ->
     node = document.doctype;
-    html = "<!DOCTYPE " +
+    '<!DOCTYPE ' +
       node.name +
       (node.publicId ? ' PUBLIC "' + node.publicId + '"' : '') +
       (!node.publicId && node.systemId ? ' SYSTEM' : '') +
-      (node.systemId ? ' "' + node.systemId + '"' : '')
+      (node.systemId ? ' "' + node.systemId + '"' : '') +
       '>'
 
 
